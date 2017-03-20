@@ -108,7 +108,7 @@ then
 fi
 
 ## This condition can only be achieved using negative numbers or zero (which are
-## already accounted for), or by using a combination of positive numbers that would
+## already accounted for) or by using a combination of positive numbers that would
 ## fail one of the other tests. (I think. Someone please check me on that.)
 if [ $(($sector_size * $number_of_disks)) -gt "$stripe_size" ];
 then
